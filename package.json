@@ -1,15 +1,19 @@
 {
   "name": "live-controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keylase/live-controller"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "applest-atem": "^0.1.2",
+    "applest-atem": "git://github.com/keylase/node-applest-atem.git",
     "body-parser": "^1.13.2",
     "express": "^4.13.1"
   },
@@ -21,9 +25,9 @@
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-watch": "^4.3.3",
-    "applest-atem": "^0.1.9",
     "node-hid": ">=0.3.1",
     "sleep": ">=1.1.5",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "node-xkeys":"*"
   }
 }
