@@ -46,7 +46,8 @@
 // 		'10011': { name: 'ME 1 PVW', label: 'Pvw1' },
 // 		'10020': { name: 'ME 2 PGM', label: 'Pgm2' },
 // 		'10021': { name: 'ME 2 PVW', label: 'Pvw2' } },
-
+localip=192.168.42.48
+atemip=192.168.42.1
 
 1:1000
 2:6000

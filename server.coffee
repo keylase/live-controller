@@ -12,6 +12,7 @@ currentMixEffect = 0
 states = [0,1]
 _ = require 'underscore'
 definedKeys = {}
+atemip = '0.0.0.0'
 
 layout = fs.readFileSync('atem.txt').toString('utf-8')
 
@@ -19,6 +20,10 @@ layoutArr = layout.split('\n');
 
 layoutArr.forEach((line) ->
   if line.indexOf('//') > -1
+    return
+  if line.indexOf('atemip') > -1
+    atemip = line.split('=')[1]
+    console.log('ATEM: '+atemip);
     return
 
   keyIn = parseInt(line.split(':')[0])
@@ -35,7 +40,7 @@ xkeys.realKeys().forEach( (key)->
       key.realIndex = definedKeys[key.index]
      else
        key.realIndex = key.index
-      console.log key
+     #console.log key
   )
 
 xkeys.on 'pressed', (key) ->
@@ -167,9 +172,10 @@ xkeys.on 'shifted', (keys) ->
 
 switchers = []
 for switcher in config.switchers
+
   atem = new ATEM
   atem.event.setMaxListeners(5)
-
+  switcher.addr = atemip
   # atem.on 'stateChanged', (err,state)->
   #   console.log 'stateChanged', state
   atem.connect(switcher.addr, switcher.port)
