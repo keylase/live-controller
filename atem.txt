@@ -1,1 +1,56 @@
-/boot/atem.txt
+// channels:
+// 	{ '0': { name: 'Black', label: 'Blk' },
+// 		'1': { name: 'Camera 1', label: 'Cam1' },
+// 		'2': { name: 'Camera 2', label: 'Cam2' },
+// 		'3': { name: 'Camera 3', label: 'Cam3' },
+// 		'4': { name: 'Camera 4', label: 'Cam4' },
+// 		'5': { name: 'Camera 5', label: 'Cam5' },
+// 		'6': { name: 'Camera 6', label: 'Cam6' },
+// 		'7': { name: 'Camera 7', label: 'Cam7' },
+// 		'8': { name: 'Camera 8', label: 'Cam8' },
+// 		'9': { name: 'Camera 9', label: 'Cam9' },
+// 		'10': { name: 'Camera 10', label: 'Cm10' },
+// 		'11': { name: 'Camera 11', label: 'Cm11' },
+// 		'12': { name: 'Camera 12', label: 'Cm12' },
+// 		'13': { name: 'Camera 13', label: 'Cm13' },
+// 		'14': { name: 'Camera 14', label: 'Cm14' },
+// 		'15': { name: 'Camera 15', label: 'Cm15' },
+// 		'16': { name: 'Camera 16', label: 'Cm16' },
+// 		'17': { name: 'Camera 17', label: 'Cm17' },
+// 		'18': { name: 'Camera 18', label: 'Cm18' },
+// 		'19': { name: 'Camera 19', label: 'Cm19' },
+// 		'20': { name: 'Camera 20', label: 'Cm20' },
+// 		'1000': { name: 'Color Bars', label: 'Bars' },
+// 		'2001': { name: 'Color 1', label: 'Col1' },
+// 		'2002': { name: 'Color 2', label: 'Col2' },
+// 		'3010': { name: 'Media Player 1', label: 'MP1' },
+// 		'3011': { name: 'Media Player 1 Key', label: 'MP1K' },
+// 		'3020': { name: 'Media Player 2', label: 'MP2' },
+// 		'3021': { name: 'Media Player 2 Key', label: 'MP2K' },
+// 		'4010': { name: 'ME 1 Key 1 Mask', label: 'M1K1' },
+// 		'4020': { name: 'ME 1 Key 2 Mask', label: 'M1K2' },
+// 		'4030': { name: 'ME 2 Key 1 Mask', label: 'M2K1' },
+// 		'4040': { name: 'ME 2 Key 2 Mask', label: 'M2K2' },
+// 		'5010': { name: 'DSK 1 Mask', label: 'DK1M' },
+// 		'5020': { name: 'DSK 2 Mask', label: 'DK2M' },
+// 		'6000': { name: 'SuperSource', label: 'SSrc' },
+// 		'7001': { name: 'Clean Feed 1', label: 'Cfd1' },
+// 		'7002': { name: 'Clean Feed 2', label: 'Cfd2' },
+// 		'8001': { name: 'Auxiliary 1', label: 'Aux1' },
+// 		'8002': { name: 'Auxiliary 2', label: 'Aux2' },
+// 		'8003': { name: 'Auxiliary 3', label: 'Aux3' },
+// 		'8004': { name: 'Auxiliary 4', label: 'Aux4' },
+// 		'8005': { name: 'Auxiliary 5', label: 'Aux5' },
+// 		'8006': { name: 'Auxiliary 6', label: 'Aux6' },
+// 		'10010': { name: 'ME 1 PGM', label: 'Pgm1' },
+// 		'10011': { name: 'ME 1 PVW', label: 'Pvw1' },
+// 		'10020': { name: 'ME 2 PGM', label: 'Pgm2' },
+// 		'10021': { name: 'ME 2 PVW', label: 'Pvw2' } },
+localip=192.168.42.48
+atemip=192.168.200.12
+
+1:3
+2:4
+3:5
+4:3010
+5:3020
