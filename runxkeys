@@ -1,0 +1,3 @@
+cd /root/live-controller
+#/root/live-controller/setip.sh
+coffee /root/live-controller/server.coffee
